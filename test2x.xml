@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>test2x</l7:Name>
+            <l7:Id>ea0fa032c2e631206f3e9aa3642fbce8</l7:Id>
+            <l7:Type>FOLDER</l7:Type>
+            <l7:TimeStamp>2018-09-09T00:36:42.896-04:00</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Folder folderId="0000000000000000ffffffffffffec76" id="ea0fa032c2e631206f3e9aa3642fbce8" version="0">
+                    <l7:Name>test2x</l7:Name>
+                </l7:Folder>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>gmutest</l7:Name>
+            <l7:Id>ea0fa032c2e631206f3e9aa3642fbd2c</l7:Id>
+            <l7:Type>SERVICE</l7:Type>
+            <l7:TimeStamp>2018-09-09T00:36:42.899-04:00</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Service id="ea0fa032c2e631206f3e9aa3642fbd2c" version="2">
+                    <l7:ServiceDetail folderId="ea0fa032c2e631206f3e9aa3642fbce8" id="ea0fa032c2e631206f3e9aa3642fbd2c" version="2">
+                        <l7:Name>gmutest</l7:Name>
+                        <l7:Enabled>$#{template.service.gmutest.ServiceDetail.Enabled}#</l7:Enabled>
+                        <l7:ServiceMappings>
+                            <l7:HttpMapping>
+                                <l7:UrlPattern>$#{template.service.gmutest.ServiceDetail.ServiceMappings.HttpMapping.UrlPattern}#</l7:UrlPattern>
+                                <l7:Verbs>
+                                    <l7:Verb>$#{template.service.gmutest.ServiceDetail.ServiceMappings.HttpMapping.Verbs.1.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.gmutest.ServiceDetail.ServiceMappings.HttpMapping.Verbs.2.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.gmutest.ServiceDetail.ServiceMappings.HttpMapping.Verbs.3.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.gmutest.ServiceDetail.ServiceMappings.HttpMapping.Verbs.4.Verb}#</l7:Verb>
+                                </l7:Verbs>
+                            </l7:HttpMapping>
+                        </l7:ServiceMappings>
+                        <l7:Properties>
+                            <l7:Property key="internal">
+                                <l7:BooleanValue>$#{template.service.gmutest.ServiceDetail.Properties.internal.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="policyRevision">
+                                <l7:LongValue>$#{template.service.gmutest.ServiceDetail.Properties.policyRevision.LongValue}#</l7:LongValue>
+                            </l7:Property>
+                            <l7:Property key="soap">
+                                <l7:BooleanValue>$#{template.service.gmutest.ServiceDetail.Properties.soap.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="tracingEnabled">
+                                <l7:BooleanValue>$#{template.service.gmutest.ServiceDetail.Properties.tracingEnabled.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="wssProcessingEnabled">
+                                <l7:BooleanValue>$#{template.service.gmutest.ServiceDetail.Properties.wssProcessingEnabled.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                        </l7:Properties>
+                    </l7:ServiceDetail>
+                    <l7:Resources>
+                        <l7:ResourceSet tag="policy">
+                            <l7:Resource type="policy" version="1">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:HardcodedResponse&gt;
+            &lt;L7p:Base64ResponseBody stringValue="$#{template.service.gmutest.Resources.ResourceSet.xml.All.HardcodedResponse.HardcodedResponse.Base64ResponseBody.stringValue}#"/&gt;
+        &lt;/L7p:HardcodedResponse&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+                        </l7:ResourceSet>
+                    </l7:Resources>
+                </l7:Service>
+            </l7:Resource>
+        </l7:Item>
+    </l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://test.gateway.com:8443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+            <l7:Properties>
+                <l7:Property key="FailOnNew">
+                    <l7:BooleanValue>true</l7:BooleanValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrUpdate" srcId="ea0fa032c2e631206f3e9aa3642fbce8" srcUri="https://test.gateway.com:8443/restman/1.0/folders/ea0fa032c2e631206f3e9aa3642fbce8" type="FOLDER"/>
+        <l7:Mapping action="NewOrUpdate" srcId="ea0fa032c2e631206f3e9aa3642fbd2c" srcUri="https://test.gateway.com:8443/restman/1.0/services/ea0fa032c2e631206f3e9aa3642fbd2c" type="SERVICE"/>
+    </l7:Mappings>
+</l7:Bundle>
