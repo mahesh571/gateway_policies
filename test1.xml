@@ -5,7 +5,7 @@
             <l7:Name>test1</l7:Name>
             <l7:Id>554035f0dc114ea9b5c5ac4e6804cb20</l7:Id>
             <l7:Type>SERVICE</l7:Type>
-            <l7:TimeStamp>2018-10-18T20:14:11.789-07:00</l7:TimeStamp>
+            <l7:TimeStamp>2018-10-18T20:21:53.107-07:00</l7:TimeStamp>
             <l7:Resource>
                 <l7:Service id="554035f0dc114ea9b5c5ac4e6804cb20" version="2">
                     <l7:ServiceDetail folderId="0000000000000000ffffffffffffec76" id="554035f0dc114ea9b5c5ac4e6804cb20" version="2">
