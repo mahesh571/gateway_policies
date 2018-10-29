@@ -5,7 +5,7 @@
             <l7:Name>test2</l7:Name>
             <l7:Id>554035f0dc114ea9b5c5ac4e6804cc93</l7:Id>
             <l7:Type>FOLDER</l7:Type>
-            <l7:TimeStamp>2018-10-25T11:24:58.127-07:00</l7:TimeStamp>
+            <l7:TimeStamp>2018-10-26T09:14:07.499-07:00</l7:TimeStamp>
             <l7:Resource>
                 <l7:Folder folderId="0000000000000000ffffffffffffec76" id="554035f0dc114ea9b5c5ac4e6804cc93" version="0">
                     <l7:Name>test2</l7:Name>
@@ -16,7 +16,7 @@
             <l7:Name>sample1</l7:Name>
             <l7:Id>554035f0dc114ea9b5c5ac4e6804ce1f</l7:Id>
             <l7:Type>SERVICE</l7:Type>
-            <l7:TimeStamp>2018-10-25T11:24:58.142-07:00</l7:TimeStamp>
+            <l7:TimeStamp>2018-10-26T09:14:07.508-07:00</l7:TimeStamp>
             <l7:Resource>
                 <l7:Service id="554035f0dc114ea9b5c5ac4e6804ce1f" version="2">
                     <l7:ServiceDetail folderId="554035f0dc114ea9b5c5ac4e6804cc93" id="554035f0dc114ea9b5c5ac4e6804ce1f" version="2">
